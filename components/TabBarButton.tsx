@@ -53,7 +53,7 @@ const TabBarButton = ({
         style={[
           {
             color: isFocused ? Colors.tabIconSelected : Colors.tabIconDefault,
-            fontSize: 12,
+            fontSize: 14,
           },
           animatedTextStyle,
         ]}
@@ -72,5 +72,6 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     gap: 5,
+    
   },
 });
