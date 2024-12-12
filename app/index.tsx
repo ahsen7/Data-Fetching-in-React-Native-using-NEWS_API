@@ -1,4 +1,4 @@
-import { ImageBackground, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { ImageBackground, StatusBar, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import React from "react";
 import { useRouter } from "expo-router";
 import { Colors } from "@/constants/Colors";
@@ -10,6 +10,7 @@ const Page = () => {
 
   return (
     <View style={styles.container}>
+      <StatusBar barStyle="light-content" />
       <ImageBackground
         source={require("../assets/images/getting-started.jpg")}
         resizeMode="cover"
@@ -51,14 +52,12 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 30,
-    fontWeight: "bold",
     color: Colors.white,
     fontFamily: "Jakarta-Bold",
     textAlign:'center'
   },
   description: {
     fontSize: 18,
-    fontWeight: "bold",
     color: Colors.white,
     fontFamily: 'Jakarta-Regular',
     textAlign:'center'

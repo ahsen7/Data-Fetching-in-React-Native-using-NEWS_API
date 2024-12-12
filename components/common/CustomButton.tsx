@@ -61,7 +61,7 @@ const styles = StyleSheet.create({
   text: {
     color: '#ffffff',
     fontSize: 16,
-    fontWeight: 'bold',
+    fontFamily: "Jakarta-Bold",
   },
   disabledText: {
     color: '#a1a1a1',
